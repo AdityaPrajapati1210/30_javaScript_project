@@ -5,13 +5,34 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+.parent{
+    display: flex;
+    
+}
+.content h1{
+    color: ghostwhite;
+    background: linear-gradient(135deg ,#00e5ff,#22cf4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    margin-top:100px;
+    margin-left: 20px;
+}
+.content p{
+    color: ghostwhite;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.content p i{
+    color: yellow;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background:linear-gradient(135deg ,#00feba,#5b548a);
-    color: #fff;
+    background:linear-gradient(135deg ,#00feba,#038822);
+    color: #ffffff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding:40px 35px;
@@ -47,18 +68,23 @@ body{
 .search button img{
     width: 20px;
 }
-weather-icon{
+.weather-icon{
     width: 170px;
     margin-top: 30px;
 }
-weather h1{
+.temp{
     font-size: 80px;
     font-weight: 500;
 }
-weather h2{
+.weather h2{
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
+}
+.feel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
 }
 .details{
     display: flex;
@@ -79,4 +105,15 @@ weather h2{
 .humadity, .wind{
     font-size: 20px;
     margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font: 100;
+    color: red;
+    display: none;
 }
