@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background: linear-gradient(-45deg, #667eea, #764ba2, #6a11cb, #8e1a86);
+    background-size: 550% 550%;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.container{
+    width: 90%;
+    max-width: 470px;
+    background: white;
+    border-radius: 12px;
+}
+.container h2{
+    margin: 20px 20px;
+}
+.search{
+    display: flex;
+    border: 1px solid black;
+    margin:0 20px 10px;
+    padding: 0px;
+    border-radius:30px;
+}
+.search input{
+    text-decoration: none;
+    background: transparent;
+    /* border: 1px solid black; */
+    /* width: 300px; */
+    flex: 1;
+    border: none;
+    padding: 15px;
+    outline: none;
+}
+.search button{
+    font-size: 20px;
+    color: white;
+    background-color: #ff7701;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 30px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 60px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 35px;
+    top: 15px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li span:hover{
+    background-color: #55555536;
+}
