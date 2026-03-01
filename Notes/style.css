@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgb(200, 123, 229), rgb(173, 224, 250));
+}
+
+.container{
+    margin: 100px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+}
+
+.heading img{
+    height: 55px;
+    padding: 5px;
+}
+
+.heading h1{
+    font-size: 50px;
+    padding-top: 3px;
+    color: white;
+}
+
+button{
+    color: white;
+    background: linear-gradient(rgb(129, 47, 223), rgb(73, 35, 151));
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    width: 190px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button img{
+    height: 20px;
+}
+
+.note{
+    width: 600px;
+}
+
+/* Each note paragraph */
+#note .input{
+    background: white;
+    min-height: 120px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;   
+    font-size: 18px;
+}
+
+#note p img{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
