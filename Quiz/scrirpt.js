@@ -91,10 +91,14 @@ function selectans(e) {
         selectBtn.classList.add("correct");
         score++;
     } else {
+        selectBtn.classList.add("correct");
         selectBtn.classList.add("incorrect");
     }
-
+    
     Array.from(answerBtn.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
         button.disabled = true;
     });
 
